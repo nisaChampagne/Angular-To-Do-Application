@@ -29,8 +29,8 @@ export class TodoComponent implements OnInit {
     });
   }
 
-  onAdd(itemTitle, itemDescription){
-    this.toDoService.addTitle(itemTitle.value, itemDescription.value);
+  onAdd(itemTitle, itemDescription, itemDate){
+    this.toDoService.addTitle(itemTitle.value, itemDescription.value, itemDate.value);
     itemTitle.value = null;
     itemDescription.value = null;
   }

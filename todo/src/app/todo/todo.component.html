@@ -5,20 +5,23 @@
 <div class='input-group'>
     <input type='text' class='form-control' placeholder="ToDo" #itemTitle>
     <input type='text' class='form-control' placeholder="Description" #itemDescription>
-    <div class='input-group-addon hover-cursor' (click)='onAdd(itemTitle, itemDescription)'>
+    <input type="date" class="form-control" #itemDate>
+    <div class='input-group-addon hover-cursor' (click)='onAdd(itemTitle, itemDescription, itemDate)'>
         <i class='fa fa-plus-circle fa-2x'></i>
     </div>
 </div>
 
 <div style="margin:5px 0px">
     <ul class="list-group" >
-      <li class="list-group-item" *ngFor="let item of toDoListArray" style='color: rosybrown;'>
+      <li class="list-group-item" *ngFor="let item of toDoListArray" style='color: rosybrown; text-align: center;'>
         <span class="hover-cursor" [class.text-success]="item.isChecked" (click)="alterCheck(item.$key,item.isChecked)">
           <i class="fa fa-lg" [ngClass]="item.isChecked?'fa-check-circle-o':'fa-circle-thin'"></i>
         </span >
         {{item.title}}
         <hr />
         {{item.description}}
+        <hr />
+        Task Creation Date: {{item.created_at}}
         <span class="hover-cursor text-danger pull-right" (click)="onDelete(item.$key)">
           <i class="fa fa-trash-o fa-lg"></i>
         </span>
