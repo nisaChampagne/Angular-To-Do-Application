@@ -1,7 +1,3 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-
 export const environment = {
   production: false,
   firebase: {
@@ -16,11 +12,24 @@ export const environment = {
   }
 };
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+/* 
+
+Added config needs to environment.ts
+used to initialize firebase
+
+Firebase seems to be fine with exposed API keys. 
+This shouldn't be the case when working with other APIs
+Just a mental note
+
+APIKEY can be visible
+just identifies the firebase project on Google servers.
+Not a security risk JUST HERE as it is necessary for someone whom would want
+to use my project
+They would need access to interact with the todo list database to add, check, and delete
+
+If this were a 5 star project, I would work on securely storing the API key and adding
+user auth
+
+*/
+
