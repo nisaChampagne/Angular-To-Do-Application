@@ -1,4 +1,4 @@
-#### Angular CLI  commands 
+#### Angular CLI  7  commands 
 * ng new angular app
     * creates new workspace  and an initial angular app
 
@@ -21,6 +21,29 @@
     * updates application and all its dependencies
 
 
+## Angular 8 app creating components
+ng install -g @angular/cli@latest  
+    * installs latest stable version of angular
+
+ng generate component [name]
+    * will create .css, .html, .spec, .ts
+    * will automatically import into app.module.ts on the top of the file and in the declarations (HAS TO BE ADDED HERE OTHERWISE IT WONT WORK)
+        ** WILL THROW A '[NAME] IS NOT A KNOWN ELEMENT' ERROR
+
+
+## Angular 8 Modules
+- Every angular app has a root module named AppModule
+- An angular app is a Modular App
+- A module is a typescript class with the decorator @NgModule
+- each module in the application has its own components, directives, services
+    - should be declared in @NgModule decorator
+
+
+## Angular Components
+    * controls a piece of screen called view
+    * handles user interaction with the view
+    * passes data and properties to the view and updates it dynamically
+    * is a typescript class with the decorator @Component
 
 
 
