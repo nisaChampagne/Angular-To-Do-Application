@@ -46,4 +46,13 @@ export class TodoComponent implements OnInit {
     this.toDoService.editTitle($key)
   }
 
+  months = ["January", "February", "March", "April", "May", "June", "July", 
+  "August", "September", "October", "November", "December"]
+
+  isAvailable= false
+
+  clickFunction(event){
+    alert('button was clicked!')
+    console.log(event)
+  }
 }

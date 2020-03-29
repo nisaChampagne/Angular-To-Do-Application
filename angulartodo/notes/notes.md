@@ -38,13 +38,57 @@ ng generate component [name]
 - each module in the application has its own components, directives, services
     - should be declared in @NgModule decorator
 
+- app.module is a default module when creating an angular app
+
+- when you make modules that exist within app, to tie them together to your entire app, in app.module.ts, youll import them on the top of the file and then add the named import to imports inside of @NgModule. 
+
+in each of the module.ts files from the added modules, youll need to add an exports key and the value being [module-name] <--- wrapped in square brackets
+
+- add unique component selector names so that there will not be conflicts.
+-- otherwise youll get an [more than one component matched this element] error
 
 ## Angular Components
     * controls a piece of screen called view
     * handles user interaction with the view
     * passes data and properties to the view and updates it dynamically
     * is a typescript class with the decorator @Component
+    * COMPONENTS define views and use services
 
+
+## BINDING
+WHAT IS BINDING
+    helps bind information between .ts file to .html template and vice versa
+
+WHAT IS DATA BINDING
+    - allows to define communication between a component and the DOM, making it very easy to define interactive applications  w/out worrying  about pushing and pulling data.
+
+1) data binding - use {{}} for data binding
+    - called interpolation
+    - the variable is referred as {{ title }} and the value of title is initialized in the .ts file
+    - in .html file, the value will be displayed
+
+2) event binding
+    -- when a user interacts with the app via keyboard movement, mouse click, mouse over, etc, that would generate an event.
+    -- these events need to be handles to perform some kind of action.
+    - event binding comes into play
+
+    EXAMPLE:
+        * in .html we define a button and added a function to it using click event
+        * in .ts we created the function for clickFunction that will have a dialog box appear displaying button is clicked .
+
+3) property binding
+    * interpolation and property binding are virtually the same BUT
+    1) interpolation injects the value into the html
+    2) property binding allows angular direct access to the elements properties in html
+        * when you say [value]="Hello", Angular is grabbing the value property and setting the variable as its propertys value.
+
+4) two way data binding
+    * allows you to have an event combined with a property binding
+        example:
+            * <input [(ngModel)]="username"/>
+              <p>Hello {{ username }}</p>
+
+5) one way binding
 
 
 ## E2E
