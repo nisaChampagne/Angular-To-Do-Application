@@ -1,7 +1,33 @@
+#### Angular CLI  commands 
+* ng new angular app
+    * creates new workspace  and an initial angular app
+
+* ng serve -open
+    * builds, serves and opens your app, rebuilding for file changes
+
+* ng add [package name]
+    * installs available libraries
+
+* ng generate [component name]
+    * generates and/or modifies files based on schematic
+
+* ng 
+    * will show available commands
+
+* ng test 
+    * runs unit tests
+
+* ng update
+    * updates application and all its dependencies
+
+
+
+
+
 ## E2E
 end to end testing 
 
-## node_modules
+## node_modules (obvious)
 
 ## src
 main folder work will be performed in
