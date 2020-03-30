@@ -13,7 +13,7 @@ Build a basic TODO web-application
 * Include a README that describes how to build and test the system.
 
 ## Bonus
- Let the user ‘edit’ a task 
+[ ] Let the user ‘edit’ a task 
 * Let the user Remove a task
 * Utilize a RESTFUL api data services like a self-build node application, or a hosted free one like firebase [firebase]
 
