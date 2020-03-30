@@ -1,3 +1,101 @@
+## What is Angular?
+- front end development framework
+- anything you can see is front end development
+- maintained and developed by google
+- angular is based on TypeScript ( a superset of Javascript)
+- javascript based
+- used to make SPA
+
+Difference between AngularJS and Angular
+# AngularJS
+    - supports MVC design model
+    - javascript
+    - doesnt provide any mobile support
+    - doesnt support concept of dependency injection
+    - less manageable
+    - deprecated
+    - 2 way binding reduces effort and time
+
+# Angular
+    - uses components and directives
+    - TypeScript
+    - uses () for events and [] for property binding
+    - simplified structure
+    - faster than AngularJS
+    - active support and frequent updates
+
+## Various features of Angular
+    - accessibility applications
+    - angular CLI
+    - code generation
+    - template
+    - testing
+
+## Services in Angular
+- 
+
+## Advantages of using Angular
+- community support
+- two way data binding
+- client and server communication
+
+## Disadvantages of using Angular
+- learning curve
+
+## Whats new in Angular 8
+- ivy engine
+    - compilation and rendering pipeline, reducing bundle size
+- bezel engine
+    - keeps track of dependencies between different packages 
+- differential loading
+    - process by which the browser chooses between modern and legacy JS based on its own capabilities
+    - performing a modern build and a legacy build of the application and the user will get the bundle they need when they load the application
+
+## string interpolation
+    - {{ }} used to display data from .ts file 
+
+## What are templates in Angular?
+- written in HTML that contain angular specific elements and attributes
+
+## What is a Decorator?
+* Decorators are the design patterns that are used for separating decoration or modification of a class without actually altering the original source code.
+
+## Directives
+- declared as @directive
+-  three kinds:
+    1) Component directives
+        *  form the main class having details of how the component should be processed, instatiated, and used at runtime
+        * MOST COMMON 
+        * directives with a template
+
+    2) structural directives
+        * deals with manipulating the dom elements
+        * typically have a * sign before the directive
+            ex: *ngIf and *ngFor
+        
+
+    3) attributes directives
+        * deal with changing the look and behavior of the dom element
+        * ex: NgStyle
+
+## Five common features of Angulars template syntax
+- *ngFor
+- *ngIf
+- interpolation {{}}
+- property binding []
+- event binding ()
+
+## Building blocks of Angular
+1) components
+2) data binding
+3) dependency injection
+4) directives
+5) metadata
+6) modules
+7) routing
+8) services
+9) template
+
 #### Angular CLI  7  commands 
 * ng new angular app
     * creates new workspace  and an initial angular app
@@ -83,12 +181,11 @@ WHAT IS DATA BINDING
         * when you say [value]="Hello", Angular is grabbing the value property and setting the variable as its propertys value.
 
 4) two way data binding
+    * bidirectional
     * allows you to have an event combined with a property binding
         example:
             * <input [(ngModel)]="username"/>
               <p>Hello {{ username }}</p>
-
-5) one way binding
 
 
 ## E2E
