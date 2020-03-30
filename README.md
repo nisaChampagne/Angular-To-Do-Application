@@ -3,19 +3,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Requirements
 Build a basic TODO web-application
-[x] Works in the Chrome and Firefox browsers
-[x] Let the user add a short description of the work ‘to-do’
-[x] Let the user mark ‘complete’ a ‘to-do’ item.
-[x] Persist the ‘to-do’ list on a browser refresh (f5 should not clear your list)
+* Works in the Chrome and Firefox browsers
+* Let the user add a short description of the work ‘to-do’
+* Let the user mark ‘complete’ a ‘to-do’ item.
+* Persist the ‘to-do’ list on a browser refresh (f5 should not clear your list)
 
 ## Additional Specifications
-[x] Be written in the Angular 7+ framework (7/8/9)
-[x] Include a README that describes how to build and test the system.
+* Be written in the Angular 7+ framework (7/8/9)
+* Include a README that describes how to build and test the system.
 
 ## Bonus
  Let the user ‘edit’ a task 
-[x] Let the user Remove a task
-[x] Utilize a RESTFUL api data services like a self-build node application, or a hosted free one like firebase [firebase]
+* Let the user Remove a task
+* Utilize a RESTFUL api data services like a self-build node application, or a hosted free one like firebase [firebase]
 
 ## Development server
 
