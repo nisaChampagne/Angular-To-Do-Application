@@ -1,4 +1,4 @@
-# Angular-To-Do-Application
+# Angular-To-Do-Application -- TEST
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6. Angular todo application that utilizes firebase database to persist todo entries when the browser is refreshed. 
 
 ## Requirements
